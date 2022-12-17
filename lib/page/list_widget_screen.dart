@@ -6,6 +6,7 @@ import 'package:f_intro/page/detail_page_widget/list_view.dart';
 import 'package:f_intro/page/detail_page_widget/row_column.dart';
 import 'package:f_intro/page/detail_page_widget/scaffold.dart';
 import 'package:f_intro/page/detail_page_widget/text.dart';
+import 'package:f_intro/page/detail_page_widget/text_field.dart';
 import 'package:flutter/material.dart';
 
 class ListWidgetScreen extends StatelessWidget {
@@ -140,6 +141,22 @@ class ListWidgetScreen extends StatelessWidget {
               );
             },
             child: const Text('Scaffold'),
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return const TextFieldWidget();
+                  },
+                ),
+              );
+            },
+            child: const Text('Text Field'),
           ),
         ],
       ),
