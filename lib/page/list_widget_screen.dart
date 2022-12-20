@@ -7,6 +7,7 @@ import 'package:f_intro/page/detail_page_widget/row_column.dart';
 import 'package:f_intro/page/detail_page_widget/scaffold.dart';
 import 'package:f_intro/page/detail_page_widget/text.dart';
 import 'package:f_intro/page/detail_page_widget/text_field.dart';
+import 'package:f_intro/page/layout_screen.dart';
 import 'package:flutter/material.dart';
 
 class ListWidgetScreen extends StatelessWidget {
@@ -157,6 +158,19 @@ class ListWidgetScreen extends StatelessWidget {
               );
             },
             child: const Text('Text Field'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return const LayoutScreen();
+                  },
+                ),
+              );
+            },
+            child: const Text('Layout'),
           ),
         ],
       ),
