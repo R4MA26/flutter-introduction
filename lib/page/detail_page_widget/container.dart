@@ -13,8 +13,6 @@ class Conatainer extends StatelessWidget {
         child: Container(
           width: 200,
           height: 200,
-          margin: const EdgeInsets.all(20),
-          padding: const EdgeInsets.all(10),
           decoration: BoxDecoration(
             border: Border.all(
               color: Colors.grey,

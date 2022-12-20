@@ -40,15 +40,17 @@ class LayoutScreen extends StatelessWidget {
                             style: TextStyle(
                               color: Colors.white,
                               fontSize: 18,
+                              fontWeight: FontWeight.bold,
                             ),
                           ),
                           Row(
                             children: [
                               const Text(
-                                'Rama',
+                                'Hay Guys...',
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 18,
+                                  fontWeight: FontWeight.bold,
                                 ),
                               ),
                               IconButton(
@@ -187,7 +189,7 @@ class LayoutScreen extends StatelessWidget {
                                         Radius.circular(12),
                                       ),
                                     ),
-                                    child: const Text('data'),
+                                    child: Text('Row $index'),
                                   ),
                                 ),
                               ],
@@ -232,13 +234,14 @@ class LayoutScreen extends StatelessWidget {
                                 ),
                                 child: Container(
                                   padding: const EdgeInsets.all(20),
+                                  height: 100,
                                   decoration: const BoxDecoration(
                                     color: Colors.amber,
                                     borderRadius: BorderRadius.all(
                                       Radius.circular(12),
                                     ),
                                   ),
-                                  child: const Text('data'),
+                                  child: Text('Column $index'),
                                 ),
                               );
                             },

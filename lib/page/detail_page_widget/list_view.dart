@@ -28,12 +28,36 @@ class ListViewWidget extends StatelessWidget {
             height: 50,
             child: ListView(
               scrollDirection: Axis.horizontal,
-              children: [...items],
+              children: [
+                ...List.generate(
+                  100,
+                  (index) {
+                    return Text(
+                      'List View $index',
+                      style: const TextStyle(
+                        fontSize: 30,
+                      ),
+                    );
+                  },
+                )
+              ],
             ),
           ),
           Expanded(
             child: ListView(
-              children: [...items],
+              children: [
+                ...List.generate(
+                  100,
+                  (index) {
+                    return Text(
+                      'List View $index',
+                      style: const TextStyle(
+                        fontSize: 30,
+                      ),
+                    );
+                  },
+                )
+              ],
             ),
           ),
         ],
